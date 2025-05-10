@@ -1,4 +1,4 @@
-package com.domsdevnest.advanced.app.v1.v0;
+package com.domsdevnest.advanced.app.v1;
 
 import com.domsdevnest.advanced.trace.HelloTraceV1;
 import com.domsdevnest.advanced.trace.TraceStatus;
