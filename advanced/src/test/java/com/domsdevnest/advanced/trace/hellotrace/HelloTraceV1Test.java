@@ -1,6 +1,5 @@
 package com.domsdevnest.advanced.trace.hellotrace;
 
-import com.domsdevnest.advanced.trace.HelloTraceV1;
 import com.domsdevnest.advanced.trace.TraceStatus;
 import org.junit.jupiter.api.Test;
 

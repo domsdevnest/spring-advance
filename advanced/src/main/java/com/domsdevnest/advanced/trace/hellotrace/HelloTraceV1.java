@@ -1,9 +1,9 @@
-package com.domsdevnest.advanced.trace;
+package com.domsdevnest.advanced.trace.hellotrace;
 
+import com.domsdevnest.advanced.trace.TraceId;
+import com.domsdevnest.advanced.trace.TraceStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-
-import javax.swing.*;
 
 @Slf4j
 @Component

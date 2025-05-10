@@ -1,7 +1,6 @@
 package com.domsdevnest.advanced.app.v2;
 
-import com.domsdevnest.advanced.trace.HelloTraceV1;
-import com.domsdevnest.advanced.trace.HelloTraceV2;
+import com.domsdevnest.advanced.trace.hellotrace.HelloTraceV2;
 import com.domsdevnest.advanced.trace.TraceStatus;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
