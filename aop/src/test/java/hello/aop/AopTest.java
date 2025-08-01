@@ -3,6 +3,7 @@ package hello.aop;
 import hello.aop.order.OrderRepository;
 import hello.aop.order.OrderService;
 import hello.aop.order.aop.AspectV4Pointcut;
+import hello.aop.order.aop.AspectV5Order;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -15,7 +16,8 @@ import org.springframework.context.annotation.Import;
 //@Import(AspectV1.class) //빈 등록을 위해 추가
 //@Import(AspectV2.class) //빈 등록을 위해 추가
 //@Import(AspectV3.class) //빈 등록을 위해 추가
-@Import(AspectV4Pointcut.class) //빈 등록을 위해 추가
+//@Import(AspectV4Pointcut.class) //빈 등록을 위해 추가
+@Import({AspectV5Order.LogAspect.class,AspectV5Order.TxAspect.class}) //빈 등록을 위해 추가
 @SpringBootTest
 public class AopTest {
 
