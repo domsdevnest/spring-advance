@@ -32,14 +32,15 @@ public class ArgsTest {
         assertThat(pointcut("args(Object)")
                 .matches(helloMethod, MemberServiceImpl.class)).isTrue();
         assertThat(pointcut("args()")
-                .matches(helloMethod, MemberServiceImpl.class)).isTrue();
-        assertThat(pointcut("args(..")
+                .matches(helloMethod, MemberServiceImpl.class)).isFalse();
+        assertThat(pointcut("args(..)")
                 .matches(helloMethod, MemberServiceImpl.class)).isTrue();
         assertThat(pointcut("args(*)")
                 .matches(helloMethod, MemberServiceImpl.class)).isTrue();
-        assertThat(pointcut("args(String..)")
+        assertThat(pointcut("args(String,..)")
                 .matches(helloMethod, MemberServiceImpl.class)).isTrue();
     }
+
     @Test
     void argsVsExecution() {
         assertThat(pointcut("args(String)")
